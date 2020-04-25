@@ -1,0 +1,24 @@
+// Базовая типографика
+
+$font-family: "roboto", "Arial", sans-serif;
+$font-family-secondary: "yeseva-one", "Georgia", serif;
+
+$font-size:                   16px;
+
+// Семантические цвета
+
+$white:                       #ffffff;
+$bg-header-color:             #181716;
+$bg-grey-dark:                #1f1c1d;
+$bg-black-light:              #151313;
+$brown-light:                 #a07b50;
+
+// Ширины
+
+$screen-sm:                   769px;
+$screen-md:                   1366px;
+
+// Ретина
+
+$retina-dpi:                  144dpi;
+$retina-dppx:                 1.5dppx;
