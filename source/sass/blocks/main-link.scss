@@ -1,0 +1,22 @@
+.main-link {
+  padding: 18px 10px 17px;
+  width: 200px;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $white;
+  border: 1px solid $brown-light;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 55px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 12px 5px 12px;
+    width: 142px;
+
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

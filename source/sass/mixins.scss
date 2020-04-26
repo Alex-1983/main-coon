@@ -1,0 +1,12 @@
+@mixin text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 23px;
+
+  text-align: center;
+  letter-spacing: -0.2px;
+
+  color: $brown-light;
+}

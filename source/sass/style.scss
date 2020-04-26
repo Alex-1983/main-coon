@@ -4,9 +4,15 @@
 @import "fonts";
 @import "variables";
 @import "scaffolding";
+@import "mixins";
 @import "global";
 
 /* blocks
 ================================*/
 @import "blocks/main-header";
+@import "blocks/main-link";
 @import "blocks/social";
+@import "blocks/main-content";
+@import "blocks/nurslings";
+@import "blocks/gallery";
+@import "blocks/toggles";

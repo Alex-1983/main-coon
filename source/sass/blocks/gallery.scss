@@ -1,0 +1,134 @@
+.gallery {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1042px;
+
+  @media (max-width: $screen-md) {
+    position: relative;
+
+    width: 720px;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 300px;
+  }
+}
+
+.gallery__inner {
+  column-count: 2;
+  column-gap: 60px;
+
+  @media (max-width: $screen-md) {
+    position: relative;
+
+    display: flex;
+
+    padding-top: 150px;
+    padding-right: 45px;
+    padding-left: 45px;
+    min-height: 500px;
+
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 0;
+    min-height: auto;
+  }
+}
+
+.gallery__item {
+  line-height: 0;
+
+  @media (max-width: $screen-md) {
+    align-self: flex-start;
+  }
+
+  &--top {
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.gallery__img-wrap {
+
+  &--top,
+  &--top img {
+    width: 519px;
+    height: 214px;
+  }
+
+  &--bottom,
+  &--bottom img {
+    width: 519px;
+    height: 241px;
+  }
+
+  &--right,
+  &--right img {
+    width: 474px;
+    height: 485px;
+  }
+
+  &--top,
+  &--top img,
+  &--bottom,
+  &--bottom img,
+  &--right,
+  &--right img {
+    @media (max-width: $screen-md) {
+      width: 152px;
+      height: 198px;
+    }
+
+    @media (max-width: $screen-sm) {
+      display: none;
+      width: 234px;
+      height: 248px;
+    }
+  }
+}
+
+.gallery__item-active {
+  @media (max-width: $screen-md) {
+    position: absolute;
+    top: 0;
+    left: 15.3%;
+  }
+
+  @media (max-width: $screen-sm) {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.gallery__item-active .gallery__img-wrap,
+.gallery__item-active .gallery__img-wrap img {
+  @media (max-width: $screen-md) {
+    width: 474px;
+    height: 495px;
+  }
+
+  @media (max-width: $screen-sm) {
+    display: block;
+
+    width: 234px;
+    height: 248px;
+  }
+}
+
+.gallery__item-next .gallery__img-wrap,
+.gallery__item-next .gallery__img-wrap img {
+  @media (max-width: $screen-md) {
+    margin-left: 150px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-left: 0;
+  }
+}
