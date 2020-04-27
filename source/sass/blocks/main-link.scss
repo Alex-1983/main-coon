@@ -8,10 +8,6 @@
   color: $white;
   border: 1px solid $brown-light;
 
-  @media (max-width: $screen-md) {
-    margin-bottom: 55px;
-  }
-
   @media (max-width: $screen-sm) {
     padding: 12px 5px 12px;
     width: 142px;

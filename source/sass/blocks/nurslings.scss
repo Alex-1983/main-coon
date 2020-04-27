@@ -6,10 +6,12 @@
 
   @media (max-width: $screen-md) {
     padding-top: 100px;
+    padding-bottom: 60px;
   }
 
   @media (max-width: $screen-sm) {
     padding-top: 54px;
+    padding-bottom: 22px;
   }
 }
 
@@ -31,12 +33,10 @@
 }
 
 .nurslings p {
-  @include text;
-
-  margin-right: auto;
-  margin-bottom: 46px;
-  margin-left: auto;
+  margin: 0 auto 46px;
   width: 514px;
+
+  @include text;
 
   @media (max-width: $screen-md) {
     margin-bottom: 49px;
@@ -44,12 +44,8 @@
 
   @media (max-width: $screen-sm) {
     margin-bottom: 32px;
-
     width: 87.5vw;
     max-width: 590px;
-
-    font-size: 14px;
-    line-height: 1.4;
   }
 }
 
