@@ -8,7 +8,7 @@
 
   @media (max-width: $screen-md) {
     padding-top: 86px;
-    padding-bottom: 47px;
+    padding-bottom: 103px;
   }
 
   @media (max-width: $screen-sm) {
@@ -67,10 +67,14 @@
   margin-right: -20px;
   margin-left: -20px;
 
+  width: 1240px;
+
   @media (max-width: $screen-md) {
     display: block;
 
     margin: 0 auto;
+
+    width: auto;
   }
 }
 
@@ -209,7 +213,7 @@
 .advantages__content p {
   margin: 0 auto;
   padding: 0;
-  width: 32.552vw;
+  width: 18.301vw;
   max-width: 300px;
 
   line-height: 25px;
@@ -217,6 +221,10 @@
   letter-spacing: -0.2px;
 
   color: $white;
+
+  @media (max-width: $screen-md) {
+    width: 32.552vw;
+  }
 
   @media (max-width: $screen-sm) {
     width: 62.5vw;

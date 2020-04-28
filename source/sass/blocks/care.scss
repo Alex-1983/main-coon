@@ -1,0 +1,232 @@
+.care {
+  padding-top: 83px;
+  padding-bottom: 78px;
+
+  background-image: url("../img/bg-care-lg@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top -8px left;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-care-lg@2x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-care-lg@1x.webp");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-care-lg@2x.webp");
+  }
+
+  @media (max-width: $screen-md) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    background-image: url("../img/bg-care-md@1x.jpg");
+    background-position: top -1px left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-care-md@2x.jpg");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-care-md@1x.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-care-md@2x.webp");
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-top: 54px;
+
+    background-image: url("../img/bg-care-sm@1x.jpg");
+    background-position: top -40px left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-care-sm@2x.jpg");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-care-sm@1x.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-care-sm@2x.webp");
+    }
+  }
+}
+
+.care__inner {
+  margin: 0 auto;
+  padding: 0 103px;
+  width: 100%;
+  max-width: 1366px;
+
+  @media (max-width: $screen-md) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.care__inner h2 {
+  margin-bottom: 27px;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 18px;
+  }
+}
+
+.care__inner h2 br {
+  display: none;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+  }
+}
+
+.care__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1240px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+
+  @media (max-width: $screen-md) {
+    flex-direction: column;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 14px;
+    width: 74.786vw;
+    max-width: 750px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-left: 0;
+    width: 90.625vw;
+    max-width: 540px;
+  }
+}
+
+.care__item {
+  padding: 21px 20px;
+  width: 600px;
+
+  @media (max-width: $screen-md) {
+    padding: 13px 0;
+    width: auto;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &--nails {
+    @media (max-width: $screen-md) {
+      order: 3;
+    }
+  }
+
+  &--nutrition {
+    @media (max-width: $screen-md) {
+      order: 4;
+    }
+  }
+}
+
+.care__content {
+  position: relative;
+
+  padding: 38px 60px 10px 59px;
+  min-height: 166px;
+
+  border: 1px solid $brown-light;
+
+  @media (max-width: $screen-md) {
+    padding-left: 50px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 20px 48px 18px 24px;
+    min-height: auto;
+  }
+}
+
+
+.care__content h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+
+  color: $brown-light;
+
+  @media (max-width: $screen-sm) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.care__content p {
+  margin: 0;
+  padding: 0;
+  padding-right: 44px;
+
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
+
+  @media (max-width: $screen-md) {
+    padding-right: 55px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: 1.562vw;
+
+    line-height: 20px;
+  }
+}
+
+.care__item--nails .care__content p {
+  @media (max-width: $screen-sm) {
+    padding-right: 37px;
+  }
+}
+
+.care__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 100%;
+
+  background-color: $brown-light;
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+
+  @media (max-width: $screen-sm) {
+    width: 45px;
+
+    background-image: url("../img/icon-arrow-sm.svg");
+    background-position: center right 17px;
+  }
+}
