@@ -36,6 +36,8 @@
 .team__title {
   margin: 0 auto;
 
+  max-width: 1160px;
+
   @media (max-width: $screen-sm) {
     padding-left: 15px;
     padding-right: 15px;
