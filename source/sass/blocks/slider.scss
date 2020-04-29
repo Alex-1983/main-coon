@@ -1,0 +1,70 @@
+.slider {
+  position: relative;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 80px;
+  padding-left: 80px;
+  width: 100%;
+  max-width: 1186px;
+
+  @media (max-width: $screen-md) {
+    padding: 0;
+    max-width: 649px;
+  }
+
+  @media (max-width: $screen-sm) {
+    max-width: 290px;
+  }
+}
+
+.slider .swiper-container {
+  @media (max-width: $screen-md) {
+    min-height: 508px;
+  }
+
+  @media (max-width: $screen-sm) {
+    min-height: auto;
+  }
+}
+
+.slider .toggles__btn {
+  @media (max-width: $screen-md) {
+    top: 93%;
+
+    transform: none;
+  }
+
+  @media (max-width: $screen-sm) {
+    top: 52px;
+    height: 25px;
+
+    &::before,
+    &::after {
+      width: 1px;
+      height: 11px;
+    }
+  }
+
+  &--prev {
+    @media (max-width: $screen-md) {
+      left: 340px;
+    }
+
+    @media (max-width: $screen-sm) {
+      height: 26px;
+
+      left: 51px;
+    }
+  }
+
+  &--next {
+    @media (max-width: $screen-md) {
+      right: 10px;
+    }
+
+    @media (max-width: $screen-sm) {
+      right: 51px;
+    }
+  }
+}

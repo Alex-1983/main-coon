@@ -41,9 +41,10 @@
 
   @media (max-width: $screen-sm) {
     padding-top: 54px;
+    padding-bottom: 45px;
 
     background-image: url("../img/bg-care-sm@1x.jpg");
-    background-position: top -40px left;
+    background-position: top left;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-care-sm@2x.jpg");

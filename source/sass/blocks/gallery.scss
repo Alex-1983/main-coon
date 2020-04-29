@@ -131,3 +131,11 @@
     margin-left: 0;
   }
 }
+
+.gallery__toggles {
+  display: none;
+
+  @media (max-width: $screen-md) {
+    display: block;
+  }
+}
