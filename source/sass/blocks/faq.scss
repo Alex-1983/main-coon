@@ -1,0 +1,60 @@
+.faq {
+  padding-top: 72px;
+  padding-bottom: 30px;
+
+  @media (max-width: $screen-md) {
+    padding-top: 140px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-top: 55px;
+  }
+}
+
+.faq__inner {
+  margin: 0 auto;
+  padding: 0 103px;
+  width: 100%;
+  max-width: 1366px;
+
+  @media (max-width: $screen-md) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.faq__inner h2 {
+  @media (max-width: $screen-md) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 24px;
+  }
+}
+
+.faq__inner p {
+  margin: 0 auto;
+  margin-bottom: 55px;
+  padding: 0;
+
+  @include text;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 50px;
+    width: 515px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 34px;
+    padding-right: 33px;
+    padding-left: 33px;
+    width: auto;
+  }
+}

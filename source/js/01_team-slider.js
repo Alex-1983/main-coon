@@ -10,13 +10,6 @@
     slidesPerView: 1,
     loop: true,
 
-
-    breakpoints: {
-    1365: {
-        effect: 'fade',
-      },
-    },
-
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrevious

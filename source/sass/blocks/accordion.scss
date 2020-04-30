@@ -1,0 +1,182 @@
+.accordion {
+  margin-right: auto;
+  margin-left: auto;
+  width: 938px;
+
+  @media (max-width: $screen-md) {
+    width: 86.588vw;
+    max-width: 900px;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 90.625vw;
+    max-width: 600px;
+  }
+}
+
+.accordion__item {
+  position: relative;
+
+  margin-bottom: 41px;
+  padding-left: 140px;
+
+  counter-increment: faq-counter;
+
+  &::before {
+    content: "0"counter(faq-counter);
+    position: absolute;
+    top: 12px;
+    left: 24px;
+
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 82px;
+
+    color: $brown-light;
+  }
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 24px;
+    padding-left: 107px;
+
+    &::before {
+      left: 27px;
+
+      font-size: 50px;
+      line-height: 59px;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-left: 0;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.accordion__head {
+  position: relative;
+
+  padding: 45px 120px 41px 42px;
+  width: 100%;
+
+  font-size: $font-size;
+  font-weight: 500;
+  line-height: 19px;
+
+  text-align: left;
+
+  color: #ddd0c3;
+  border: 1px solid $brown-light;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 106px;
+    height: 100%;
+
+    border-left: 1px solid $brown-light;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: $screen-md) {
+    padding: 23px 123px 17px 30px;
+
+    min-height: 77px;
+
+    font-size: $font-size;
+    line-height: 19px;
+
+    &::after {
+      width: 74px;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 12px 50px 8px 16px;
+
+    min-height: 60px;
+
+    font-size: 14px;
+    line-height: 1.4;
+
+    &::after {
+      width: 43px;
+    }
+  }
+}
+
+.accordion__body {
+  margin: 0;
+  padding: 39px 204px 38px 40px;
+
+  border: 1px solid $brown-light;
+
+  @media (max-width: $screen-md) {
+    padding: 23px 145px 23px 29px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 10px 17px 7px 13px;
+  }
+}
+
+.accordion__body p {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  line-height: 1.54;
+
+  text-align: left;
+  letter-spacing: 0.07px;
+
+  @media (max-width: $screen-md) {
+    line-height: 1.58;
+  }
+
+  @media (max-width: $screen-sm) {
+    line-height: 1.43;
+  }
+
+  &:last-child {
+    margin-top: 27px;
+
+    @media (max-width: $screen-md) {
+      margin-top: 20px;
+      padding-right: 15px;
+    }
+
+    @media (max-width: $screen-md) {
+      margin-top: 7px;
+      padding-right: 0;
+    }
+  }
+}
+
+.js .accordion__body {
+  display: none;
+}
+
+.js .accordion-open .accordion__body {
+  display: block;
+}
+
+.js .accordion-open .accordion__head {
+  &::after {
+    background-color: $brown-light;
+    background-image: url("../img/icon-minus.svg");
+  }
+}

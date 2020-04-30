@@ -2,9 +2,11 @@
   padding-top: 80px;
   padding-bottom: 70px;
 
+  background-color: $bg-black-light;
+
   @media (max-width: $screen-md) {
-   padding-top: 84px;
-   padding-bottom: 95px;
+    padding-top: 84px;
+    padding-bottom: 95px;
   }
 
   @media (max-width: $screen-sm) {
