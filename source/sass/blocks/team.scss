@@ -51,17 +51,22 @@
   margin-bottom: 27px;
   padding: 0;
 
-  width: 510px;
+  width: 515px;
+  max-width: 850px;
 
   @include text;
 
   letter-spacing: 0;
+
+  @media (max-width: $screen-md) {
+    max-width: 650px;
+  }
 
   @media (max-width: $screen-sm) {
     margin-bottom: 37px;
     padding-left: 10px;
     padding-right: 10px;
     width: auto;
-    max-width: 465px;
+    max-width: 520px;
   }
 }

@@ -14,8 +14,6 @@
 }
 
 .features__inner {
-  position: relative;
-
   margin: 0 auto;
   padding: 0 70px;
   width: 100%;
@@ -40,7 +38,6 @@
   }
 }
 
-
 .features__text {
   margin: 0 auto 20px;
   width: 735px;
@@ -48,6 +45,7 @@
   @media (max-width: $screen-md) {
     margin-bottom: 45px;
     width: 443px;
+    max-width: 515px;
   }
 
   @media (max-width: $screen-sm) {
@@ -60,7 +58,17 @@
   margin: 0;
   padding: 0;
 
+  max-width: 850px;
+
   @include text;
+
+  @media (max-width: $screen-md) {
+    max-width: 650px;
+  }
+
+  @media (max-width: $screen-sm) {
+    max-width: 520px;
+  }
 }
 
 .features__text span {
@@ -80,6 +88,10 @@
 
     line-height: 1.4;
   }
+}
+
+.features__wrap {
+  position: relative;
 }
 
 .features__img-wrap {
@@ -172,7 +184,6 @@
   }
 }
 
-
 .features__img img {
   width: 623px;
   height: 688px;
@@ -212,7 +223,7 @@
 }
 
 .features__item {
-  position: relative;
+  position: absolute;
 
   font-size: $font-size;
   font-weight: 300;
@@ -240,6 +251,7 @@
   }
 
   @media (max-width: $screen-sm) {
+    position: relative;
     margin-bottom: 15px;
 
     font-size: 14px;
@@ -254,8 +266,8 @@
   }
 
   &--kindness {
-    top: 322px;
-    left: -382px;
+    top: 190px;
+    left: -522px;
 
     padding-right: 39px;
     width: 279px;
@@ -268,8 +280,8 @@
     }
 
     @media (max-width: $screen-md) {
-      top: 312px;
-      left: -265px;
+      top: 127px;
+      left: -360px;
 
       padding-right: 22px;
       width: 190px;
@@ -295,8 +307,8 @@
   }
 
   &--appearance {
-    top: 566px;
-    left: -357px;
+    top: 478px;
+    left: -496px;
 
     padding-right: 31px;
     width: 230px;
@@ -306,8 +318,8 @@
     }
 
     @media (max-width: $screen-md) {
-      top: 442px;
-      left: -278px;
+      top: 320px;
+      left: -373px;
 
       padding-right: 22px;
       width: 190px;
@@ -336,8 +348,8 @@
   }
 
   &--training {
-    top: 344px;
-    right: -458px;
+    top: 301px;
+    right: -536px;
 
     padding-left: 18px;
     width: 217px;
@@ -348,8 +360,8 @@
     }
 
     @media (max-width: $screen-md) {
-      top: 251px;
-      right: -298px;
+      top: 199px;
+      right: -374px;
 
       padding-left: 22px;
       width: 171px;
@@ -371,8 +383,8 @@
   }
 
   &--size {
-    top: 518px;
-    right: -423px;
+    top: 521px;
+    right: -475px;
 
     padding-left: 33px;
     width: 191px;
@@ -385,8 +397,8 @@
     }
 
     @media (max-width: $screen-md) {
-      top: 300px;
-      right: -273px;
+      top: 346px;
+      right: -319px;
 
       padding-left: 24px;
       width: 141px;

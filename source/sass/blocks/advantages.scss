@@ -43,9 +43,10 @@
 }
 
 .advantages__inner p {
-  margin: 0;
-  margin-bottom: 47px;
+  margin: 0 auto 47px;
   padding: 0;
+
+  max-width: 850px;
 
   @include text;
 
@@ -53,10 +54,14 @@
 
   @media (max-width: $screen-md) {
     margin-bottom: 60px;
+
+    max-width: 750px;
   }
 
   @media (max-width: $screen-sm) {
     margin-bottom: 38px;
+
+    max-width: 520px;
   }
 }
 

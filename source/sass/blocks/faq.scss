@@ -44,11 +44,13 @@
   margin-bottom: 55px;
   padding: 0;
 
+  max-width: 850px;
+
   @include text;
 
   @media (max-width: $screen-md) {
     margin-bottom: 50px;
-    width: 515px;
+    max-width: 650px;
   }
 
   @media (max-width: $screen-sm) {
@@ -56,5 +58,6 @@
     padding-right: 33px;
     padding-left: 33px;
     width: auto;
+    max-width: 520px;
   }
 }
