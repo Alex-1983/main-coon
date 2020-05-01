@@ -5,7 +5,6 @@
   margin-left: auto;
   padding-right: 80px;
   padding-left: 80px;
-
   width: 1186px;
 
   @media (max-width: $screen-md) {
@@ -16,6 +15,24 @@
 
   @media (max-width: $screen-sm) {
     max-width: 450px;
+  }
+
+  &--reviews {
+    padding-right: 104px;
+    padding-left: 57px;
+    width: 1281px;
+
+    @media (max-width: $screen-md) {
+      padding: 0;
+      padding-left: 18px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding-left: 0;
+      max-width: 450px;
+    }
   }
 }
 
@@ -29,6 +46,12 @@
   }
 }
 
+.slider--reviews .swiper-container {
+  @media (max-width: $screen-md) {
+    min-height: auto;
+  }
+}
+
 .slider .toggles__btn {
   @media (max-width: $screen-md) {
     top: 93%;
@@ -38,6 +61,7 @@
 
   @media (max-width: $screen-sm) {
     top: 52px;
+
     height: 25px;
 
     &::before,
@@ -49,14 +73,14 @@
 
   &--prev {
     @media (max-width: $screen-md) {
-      left: auto;
       right: 294px;
+      left: auto;
     }
 
     @media (max-width: $screen-sm) {
-      height: 26px;
-
       left: 51px;
+
+      height: 26px;
     }
   }
 
@@ -67,6 +91,65 @@
 
     @media (max-width: $screen-sm) {
       right: 51px;
+    }
+  }
+}
+
+.slider--reviews .toggles__btn {
+  @media (max-width: $screen-md) {
+    top: 130px;
+
+    width: 72px;
+    height: 26px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    top: 75px;
+
+    width: 10px;
+    height: 25px;
+
+    background: none;
+
+    &::before,
+    &::after {
+      display: block;
+    }
+  }
+
+  &--prev {
+    @media (max-width: $screen-md) {
+      right: auto;
+      left: 62px;
+
+      background-image: url("../img/review-arrow-left.svg");
+    }
+
+    @media (max-width: $screen-sm) {
+      left: 0;
+
+      background-image: none;
+    }
+  }
+
+  &--next {
+    @media (max-width: $screen-md) {
+      right: 40px;
+
+      background-image: url("../img/review-arrow-right.svg");
+    }
+
+    @media (max-width: $screen-sm) {
+      right: 0;
+      background-image: none;
     }
   }
 }

@@ -48,6 +48,7 @@
   }
 
   @media (max-width: $screen-sm) {
+    margin-bottom: 28px;
     padding-left: 0;
 
     &::before {
@@ -57,6 +58,14 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.accordion__item br {
+  display: none;
+
+  @media (max-width: $screen-sm) {
+    display: block;
   }
 }
 
@@ -93,7 +102,6 @@
 
   @media (max-width: $screen-md) {
     padding: 23px 123px 17px 30px;
-
     min-height: 77px;
 
     font-size: $font-size;
@@ -106,8 +114,7 @@
 
   @media (max-width: $screen-sm) {
     padding: 12px 50px 8px 16px;
-
-    min-height: 60px;
+    min-height: 47px;
 
     font-size: 14px;
     line-height: 1.4;
@@ -136,6 +143,7 @@
 .accordion__body p {
   margin: 0;
   padding: 0;
+  width: auto;
 
   font-weight: 300;
   line-height: 1.54;
@@ -159,7 +167,7 @@
       padding-right: 15px;
     }
 
-    @media (max-width: $screen-md) {
+    @media (max-width: $screen-sm) {
       margin-top: 7px;
       padding-right: 0;
     }

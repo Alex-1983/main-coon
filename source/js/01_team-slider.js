@@ -2,7 +2,7 @@
 
 (function() {
   var team = document.querySelector(".team");
-  var teamSlider = document.querySelector(".swiper-container");
+  var teamSlider = team.querySelector(".swiper-container");
   var buttonPrevious = team.querySelector(".toggles__btn--prev");
   var buttonNext = team.querySelector(".toggles__btn--next");
 
@@ -11,8 +11,8 @@
     loop: true,
 
     navigation: {
-      nextEl: buttonNext,
-      prevEl: buttonPrevious
+      prevEl: buttonPrevious,
+      nextEl: buttonNext
     },
   });
 
