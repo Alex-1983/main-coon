@@ -60,7 +60,6 @@ gulp.task("html", function() {
     .pipe(gulp.dest("build"));
 });
 
-
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
